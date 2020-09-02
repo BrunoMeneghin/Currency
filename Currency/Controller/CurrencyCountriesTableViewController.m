@@ -48,8 +48,8 @@
                                                                          NSError * _Nullable error) {
         NSError *err;
         NSDictionary *currencyWithCountries = [NSJSONSerialization JSONObjectWithData:data
-                                                                             options:kNilOptions
-                                                                               error:&err];
+                                                                              options:kNilOptions
+                                                                                error:&err];
         [self completionHandlerNSURLError:error];
         [self serializationError:err];
         
