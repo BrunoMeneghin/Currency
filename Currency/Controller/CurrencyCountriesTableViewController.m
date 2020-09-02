@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self setupUI];
     [self fetchingDataFromCurrency];
     [self.tableView reloadData];
@@ -32,6 +32,9 @@
 # pragma mark - Functions
 
 - (void) setupUI {
+    /** without XIB with View Code if you needed
+    [self.tableView registerClass:CurrencyTableViewCell.class forCellReuseIdentifier:_cellId];
+    */
     self.cellId = @"cellCurrency";
     self.navigationItem.title = @"Currency";
 }
